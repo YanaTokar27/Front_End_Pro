@@ -20,3 +20,10 @@ button.onclick = function () {
     div.innerHTML = b;
     inputIn.value = '';
 };
+
+let c = 18;
+let d = 2;
+
+console.log(c * d);
+console.log(c / d);
+console.log(c + d);
