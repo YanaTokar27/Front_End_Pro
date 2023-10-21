@@ -37,3 +37,8 @@ document.querySelector('#btn-2').onclick = (event) => {
     console.log(form.elements.two.value);
     console.log(form.elements.n2.value);
 }
+
+
+document.querySelector('.b-1').onclick = () => {
+    console.log('1');
+}
