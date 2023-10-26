@@ -2,7 +2,7 @@
 
 function f(n) {
     console.log('step n', n);
-    if(n === 1) {
+    if (n === 1) {
         console.log('return');
         return n;
     }
