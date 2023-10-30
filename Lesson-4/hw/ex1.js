@@ -9,18 +9,18 @@ function tempConvert(temp, unit) {
 
     if (unit == 'f') {
         f = temp;
-        c = (f - 32) * 5 / 9;
+        c = farToCel(f);
         k = celToKel(k);
     }
     else if (unit == 'c') {
         c = temp;
-        f = (c * 9 / 5) + 32;
-        k = c + 273.15;
+        f = celToFar(c);
+        k = celToKel(c);
     }
     else {
         k = temp;
-        c = k - 273.15;
-        f = (c * 9 / 5) + 32;
+        c = farToCel(f);
+        f = celToFar(c);
     }
 
     console.log(f, k, c);
@@ -32,7 +32,20 @@ function celToKel(c) {
     return k;
 }
 
+function farToCel(f) {
+    let c = (f - 32) * 5 / 9;
+    return c;
+}
+
+function celToFar(c) {
+    f = (c * 9 / 5) + 32;
+    return f;
+}
+
+
+
 tempConvert(14, 'c');
+// tempConvert(14, 'f');
 
 
 // function getTempConvertCelcium(temp, unit) {

@@ -1,13 +1,13 @@
 
 
-function callback() {
-    console.log('CALLBACK!!');
-}
+// function callback() {
+//     console.log('CALLBACK!!');
+// }
 
 
 
 
-setTimeout(callback, 1000);
+// setTimeout(callback, 1000);
 
 
 function myAlert(callback) {
@@ -15,7 +15,7 @@ function myAlert(callback) {
     callback();
 }
 
-function abc(){
+function abc() {
     console.log('ABC');
 }
 
