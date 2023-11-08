@@ -5,9 +5,6 @@ function task1() {
         res.push(curr);
         curr++;
     }
-    // for (let i = 0; i < 1000; i++) {
-    //     res.push(i + 1);
-    // }
     return res;
 }
 console.log(task1());
