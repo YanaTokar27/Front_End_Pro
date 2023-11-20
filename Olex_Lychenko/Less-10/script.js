@@ -41,3 +41,51 @@ while (p < 4) {
 
 out.innerHTML = outStr;
 
+//task hw
+
+// let out2 = document.querySelector('.out2');
+// let t = 0;
+// let ots = '';
+
+// while (t < 50) {
+//     t++;
+//     ots += t + '_';
+// }
+
+// out2.innerHTML = ots;
+
+
+
+let out3 = document.querySelector('.out3').onclick =
+    function () {
+        let ots2 = '';
+        for (t = 1; t <= 50; t++)
+            ots2 += t + '_';
+        console.log(ots2);
+    }
+
+//task2
+
+let out4 = document.querySelector('.out4');
+let m = 0;
+let str = '';
+while (m < 46) {
+    m += 2;
+    str += m + '_';
+}
+
+out4.innerHTML = str;
+
+//task3
+
+let out5 = document.querySelector('.out5');
+// let h = 0;
+let str1 = '';
+let h = 25;
+while (h >= 7) {
+
+    str1 += h + '_';
+    h--;
+}
+
+out5.innerHTML = str1;
