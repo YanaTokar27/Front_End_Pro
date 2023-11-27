@@ -32,28 +32,27 @@ console.log(a);
 let b1 = document.querySelector('.b1');
 let d1 = [33, 'best', 66, 'best'];
 
-// function outValue() {
-//     console.log(d1);
-// }
+function outValue() {
+    let outPut = document.querySelector('.out');
+    outPut.innerHTML = ' ' + d1;
+    console.log(d1);
+}
 
 b1.addEventListener('click', () => {
     let i1 = document.querySelector('.i1').value;
     d1.push(i1);
-    console.log(d1);
+    outValue();
 })
-
-
-let out = document.querySelector('.out');
 
 
 let b2 = document.querySelector('.b2');
 b2.addEventListener('click', () => {
     d1.pop();
-    console.log(d1);
+    outValue();
 })
 
 let b3 = document.querySelector('.b3');
 b3.addEventListener('click', () => {
     d1.shift();
-    console.log(d1);
+    outValue();
 })
