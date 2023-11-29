@@ -17,3 +17,16 @@ function f(n) {
 let result = f(3);
 
 console.log('result', result);
+
+
+function f(n) {
+    let count = 1;
+    let n = 3;
+
+    for (i = 1; i > n; i++) {
+
+    }
+
+
+}
+

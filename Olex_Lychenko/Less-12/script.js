@@ -56,3 +56,25 @@ b3.addEventListener('click', () => {
     d1.shift();
     outValue();
 })
+
+//Рекурсія
+let c = 0;
+function f1() {
+    c++;
+    console.log(c);
+    if (c === 15) return;
+    f1();
+}
+
+f1();
+
+function f2() {
+    let out = '';
+    for (i = 1; i <= 20; i++) {
+        out += i + ' ';
+    }
+    console.log(out);
+}
+
+f2();
+
