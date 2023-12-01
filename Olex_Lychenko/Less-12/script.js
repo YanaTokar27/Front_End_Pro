@@ -68,9 +68,10 @@ function f1() {
 
 f1();
 
+//через цикл
 function f2() {
     let out = '';
-    for (i = 1; i <= 20; i++) {
+    for (let i = 1; i <= 20; i++) {
         out += i + ' ';
     }
     console.log(out);
@@ -78,3 +79,15 @@ function f2() {
 
 f2();
 
+//те саме що вище, але через рекурсію
+let i = 0;
+let out = ' ';
+function f3() {
+    i++;
+    out += i + ' ';
+    if (i >= 30) return;
+    f3();
+}
+
+f3();
+console.log(out);
