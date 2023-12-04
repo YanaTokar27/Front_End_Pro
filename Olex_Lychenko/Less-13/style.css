@@ -1,0 +1,23 @@
+.container {
+    max-width: 80%;
+    min-width: 360px;
+    margin: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+
+.task {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: 2px solid blue;
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+}
+
+.b1 {
+    margin-top: 10px;
+}
