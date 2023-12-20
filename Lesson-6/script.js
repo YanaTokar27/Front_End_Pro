@@ -27,13 +27,16 @@ let arr4 = arr.filter(filterFun2);
 console.log(arr4);
 
 let user = {
-    name: 'User',
+    name: 'Катя',
     age: 42,
     isUser: true,
-    'super User': 'Yana',
+    'super User': 'Яна',
 }
 
-for (let key in user) {           //ця конструкція заміняє рядки 41-51
+let a = user['super User'];
+
+
+for (let key in user) {           //ця конструкція заміняє рядки 43-53
     console.log('property:', key, 'value:', user[key]);
 }
 
@@ -61,3 +64,16 @@ let user1 = {
 
 user1.sayHi();
 user1.sayHello();
+
+
+let user2 = {
+    name: 'Олена',
+    age: 35,
+    isUser: true,
+    'super User': 'Інна',
+    sayHi: function () {
+        console.log('Привіт', this.name);
+    }
+}
+
+user2.sayHi();
