@@ -25,3 +25,39 @@ let filterFun2 = (element) => {
 let arr4 = arr.filter(filterFun2);
 
 console.log(arr4);
+
+let user = {
+    name: 'User',
+    age: 42,
+    isUser: true,
+    'super User': 'Yana',
+}
+
+for (let key in user) {           //ця конструкція заміняє рядки 41-51
+    console.log('property:', key, 'value:', user[key]);
+}
+
+// let propArray = Object.keys(user);
+// console.log(propArray);
+
+// propArray.forEach((element) => {
+//     console.log(user[element]);
+// })
+
+// for (let i = 0; i < propArray.length; i++) {
+//     let prop = propArray[i];
+//     console.log(user[prop]);
+// }
+
+
+let user1 = {
+    sayHi: function () {
+        console.log('Hi!')
+    },
+    sayHello: () => {
+        alert('Hello!')
+    }
+};
+
+user1.sayHi();
+user1.sayHello();
