@@ -72,8 +72,29 @@ let user2 = {
     isUser: true,
     'super User': 'Інна',
     sayHi: function () {
-        console.log('Привіт', this.name);
+        console.log('Привіт', this.name, this.age);
     }
 }
 
 user2.sayHi();
+
+let user3 = {
+    name: 'Антон',
+    friendsNames: [],
+    myName: function () {
+        console.log('My name is', this.name);
+    },
+    addFriendName: function (nameNew) {
+        this.friendsNames.push(nameNew);
+    },
+    printFriendsNames: function () {
+        console.log(this.friendsNames);
+    }
+};
+
+user3.myName();
+user3.addFriendName('Anna');
+user3.printFriendsNames();
+console.log(user3);
+
+
