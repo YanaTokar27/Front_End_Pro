@@ -7,7 +7,7 @@ function task1() {
     }
     return res;
 }
-console.log(task1());
+console.log('task1  ' + task1());
 
 
 function task2() {
@@ -20,7 +20,7 @@ function task2() {
     return res;
 }
 
-console.log(task2());
+console.log('task2  ' + task2());
 
 function task3() {
     let res = [];
@@ -33,7 +33,7 @@ function task3() {
     return res;
 }
 
-console.log(task3());
+console.log('task3  ' + task3());
 
 function task4() {
 
@@ -43,4 +43,21 @@ function task4() {
     return student1Courses.filter((element1) => student2Courses.some((element2) => element1 == element2));
 }
 
-console.log(task4());
+console.log('task4  ' + task4());
+
+
+
+function task5() {
+
+    let nameMan = ['Женя', 'Олег', 'Саша', 'Валерій'];
+    let nameWoman = ['Ольга', 'Саша', 'Олена', 'Женя'];
+
+    let match = nameMan.filter((element1) => nameWoman.some((element2) => element1 === element2));
+
+    return match;
+
+}
+
+console.log('task5  ' + task5());
+
+// var sign = prompt("What's your sign?");
