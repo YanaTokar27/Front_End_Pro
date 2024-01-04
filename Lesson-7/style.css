@@ -3,3 +3,14 @@
     min-width: 360px;
     margin: 20px;
 }
+
+
+.field {
+    border: 2px solid red;
+    margin: 10px;
+    padding: 5px;
+}
+
+.out {
+    padding-top: 5px;
+}
